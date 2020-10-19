@@ -1,0 +1,34 @@
+{
+  "name": "@voxpelli/eslint-config-jsdoc-ts",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "Subset of my personal ESLint config, focused on TypeScript-validated JSDoc",
+  "author": "Pelle Wessman <pelle@kodfabrik.se> (https://kodfabrik.se/)",
+  "homepage": "https://github.com/voxpelli/eslint-config-jsdoc-ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/voxpelli/eslint-config-jsdoc-ts.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "test": "installed-check -i eslint && eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-jsdoc": "^21.0.0",
+    "husky": "^4.2.5",
+    "installed-check": "^3.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-jsdoc": "^21.0.0"
+  }
+}

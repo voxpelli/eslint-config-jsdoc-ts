@@ -1,0 +1,19 @@
+{
+  "plugins": ["jsdoc"],
+  "extends": ["plugin:jsdoc/recommended"],
+  "root": true,
+  "settings": {
+    "jsdoc": {
+      "mode": "typescript"
+    }
+  },
+  "rules": {
+    "jsdoc/check-types": 0,
+    "jsdoc/no-undefined-types": 0,
+    "jsdoc/require-jsdoc": 0,
+    "jsdoc/require-param-description": 0,
+    "jsdoc/require-property-description": 0,
+    "jsdoc/require-returns-description": 0,
+    "jsdoc/valid-types": 0
+  }
+}
