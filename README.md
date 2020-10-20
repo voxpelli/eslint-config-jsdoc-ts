@@ -1,8 +1,8 @@
-# @voxpelli/eslint-config
+# @voxpelli/eslint-config-jsdoc-ts
 
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat)](https://github.com/standard/semistandard)
 
-My personal ESLint config which extends [standard](https://standardjs.com/) / [semistandard](https://github.com/standard/semistandard) with a couple of extra checks that I find helpful in my projects.
+TypeScript-validated JSDoc related rule subset of [my personal ESLint config](https://github.com/voxpelli/eslint-config) that.
 
 Includes the semistandard rules directly rather than relying on [eslint-config-semistandard](https://github.com/standard/eslint-config-semistandard), as that package isn't always trailing the main [eslint-config-standard](https://github.com/standard/eslint-config-standard) package.
 
@@ -19,14 +19,14 @@ As ESLint configs and dependencies can and will change their rules with major re
 To easily install all correct peer dependencies, you can use [`install-peerdeps`](https://www.npmjs.com/package/install-peerdeps):
 
 ```bash
-install-peerdeps --dev @voxpelli/eslint-config
+install-peerdeps --dev @voxpelli/eslint-config-jsdoc-ts
 ```
 
 Then add a `.eslintrc` with the following:
 
 ```
 {
-  "extends": "@voxpelli",
+  "extends": "@voxpelli/eslint-config-jsdoc-ts",
   "root": true
 }
 ```
