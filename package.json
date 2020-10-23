@@ -22,13 +22,13 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-jsdoc": "^21.0.0",
-    "husky": "^4.2.5",
+    "eslint": "^7.11.0",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "husky": "^4.3.0",
     "installed-check": "^3.0.0"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-jsdoc": "^21.0.0"
+    "eslint": "^7.11.0",
+    "eslint-plugin-jsdoc": "^30.7.3"
   }
 }
