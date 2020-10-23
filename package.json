@@ -1,6 +1,6 @@
 {
   "name": "@voxpelli/eslint-config-jsdoc-ts",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "description": "Subset of my personal ESLint config, focused on TypeScript-validated JSDoc",
   "author": "Pelle Wessman <pelle@kodfabrik.se> (https://kodfabrik.se/)",
