@@ -10,7 +10,7 @@
     "url": "git://github.com/voxpelli/eslint-config-jsdoc-ts.git"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=12.11.0"
   },
   "scripts": {
     "repos": "eslint-remote-tester",
