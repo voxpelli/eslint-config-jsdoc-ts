@@ -1,4 +1,4 @@
 {
-  "extends": "./",
+  "extends": ["semistandard", "./"],
   "root": true
 }
