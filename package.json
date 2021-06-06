@@ -22,7 +22,7 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "eslint": "^7.11.0",
+    "eslint": "^7.28.0",
     "eslint-plugin-jsdoc": "^30.7.3",
     "husky": "^4.3.0",
     "installed-check": "^4.0.0-0"
