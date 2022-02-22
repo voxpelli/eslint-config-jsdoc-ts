@@ -43,6 +43,6 @@
   },
   "peerDependencies": {
     "eslint": ">=7.19.0",
-    "eslint-plugin-jsdoc": "^35.3.0"
+    "eslint-plugin-jsdoc": "^35.3.0 || ^37.9.4"
   }
 }
