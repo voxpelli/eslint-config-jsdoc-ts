@@ -7,15 +7,18 @@
     "voxpelli/list-installed",
     "voxpelli/node-bunyan-adaptor",
     "voxpelli/node-connect-pg-simple",
-    "voxpelli/node-fetch-politely",
-    "voxpelli/node-fulfills",
-    "voxpelli/node-github-publish",
     "voxpelli/node-installed-check-core",
     "voxpelli/node-installed-check",
-    "voxpelli/node-jekyll-utils",
-    "voxpelli/node-micropub-express",
     "voxpelli/node-pg-pubsub",
     "voxpelli/node-promised-retry",
     "voxpelli/pony-cause"
+  ],
+
+  "nonCompliant": [
+    "voxpelli/node-fetch-politely",
+    "voxpelli/node-fulfills",
+    "voxpelli/node-github-publish",
+    "voxpelli/node-jekyll-utils",
+    "voxpelli/node-micropub-express"
   ]
 }
