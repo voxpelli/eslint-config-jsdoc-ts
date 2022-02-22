@@ -1,3 +1,15 @@
 {
-  "extends": ["@voxpelli", "./"]
+  "plugins": [
+    "es",
+    "import",
+    "mocha",
+    "node",
+    "promise",
+    "security",
+    "unicorn"
+  ],
+  "extends": [
+    "./"
+  ],
+  "root": true
 }
