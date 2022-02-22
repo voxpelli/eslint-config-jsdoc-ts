@@ -1,3 +1,8 @@
+env: {}
+
+# FILE GENERATED WITH: npx ghat voxpelli/ghatemplates/eslint-external
+# SOURCE: https://github.com/voxpelli/ghatemplates
+
 name: Test External
 on:
   push:
@@ -61,4 +66,3 @@ jobs:
       - name: run eslint
         run: ../main/node_modules/.bin/eslint --resolve-plugins-relative-to ../main --ext js .
         working-directory: ./project
-
