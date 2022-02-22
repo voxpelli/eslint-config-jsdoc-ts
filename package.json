@@ -10,11 +10,11 @@
     "url": "git://github.com/voxpelli/eslint-config-jsdoc-ts.git"
   },
   "engines": {
-    "node": ">=12.11.0"
+    "node": "^14.13.1 || >=16.0.0"
   },
   "scripts": {
     "sync-gh-actions": "ghat",
-    "test": "installed-check -i installed-check && eslint ."
+    "test": "installed-check -i eslint-plugin-jsdoc && eslint ."
   },
   "husky": {
     "hooks": {
