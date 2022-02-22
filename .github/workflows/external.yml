@@ -46,7 +46,7 @@ jobs:
         run: '[ -f package-lock.json ] && npm ci --ignore-scripts || npm install --ignore-scripts'
         working-directory: ./project
       - name: modify project eslint
-        run: sed 's/"@voxpelli"/"..\/main"/' .eslintrc > tmp.eslintrc && rm .eslintrc && mv tmp.eslintrc .eslintrc
+        run: sed 's/"@voxpelli"/"..\/main/test.eslintrc"/' .eslintrc > tmp.eslintrc && rm .eslintrc && mv tmp.eslintrc .eslintrc
         working-directory: ./project
       - name: run eslint
         run: ../main/node_modules/.bin/eslint --resolve-plugins-relative-to ../main --ext js .
