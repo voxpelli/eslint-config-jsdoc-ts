@@ -1,0 +1,38 @@
+env: {}
+
+# FILE GENERATED WITH: npx ghat voxpelli/ghatemplates/npm-test
+# SOURCE: https://github.com/voxpelli/ghatemplates
+# OPTIONS: {"set":["jobs.test.strategy.matrix.node_version=[12]"]}
+
+name: Test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  test:
+    name: Node ${{ matrix.node_version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        node_version:
+          - 12
+        os:
+          - ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: npm
+      - name: npm install/ci
+        run: >-
+          [ -f package-lock.json ] && npm ci --ignore-scripts || npm install
+          --ignore-scripts
+      - run: npm run build --if-present
+      - run: npm test

@@ -13,8 +13,8 @@
     "node": ">=12.11.0"
   },
   "scripts": {
-    "repos": "eslint-remote-tester",
-    "test": "installed-check -i eslint && eslint . && eslint-remote-tester"
+    "sync-gh-actions": "ghat",
+    "test": "installed-check -i installed-check && eslint ."
   },
   "husky": {
     "hooks": {
@@ -27,16 +27,17 @@
     "eslint-config-semistandard": "15.0.1",
     "eslint-config-standard": ">=14.1.0",
     "eslint-plugin-import": ">=2.18.0",
-    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-jsdoc": "^35.3.0",
     "eslint-plugin-node": ">=9.1.0",
     "eslint-plugin-promise": ">=4.2.1",
     "eslint-plugin-standard": ">=4.0.0",
-    "eslint-remote-tester": "^1.1.0",
+    "ghat": "^0.14.0",
     "husky": "^4.3.8",
-    "installed-check": "^4.0.0"
+    "installed-check": "^4.0.0",
+    "npm-run-all": "^4.1.5"
   },
   "peerDependencies": {
     "eslint": "^7.19.0",
-    "eslint-plugin-jsdoc": "^30.7.3"
+    "eslint-plugin-jsdoc": "^35.3.0"
   }
 }
