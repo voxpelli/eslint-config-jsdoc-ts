@@ -1,5 +1,6 @@
 {
   "compliant": [
+    "voxpelli/node-connect-pg-simple",
     "voxpelli/pony-cause"
   ],
 
