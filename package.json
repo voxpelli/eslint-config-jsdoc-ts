@@ -38,6 +38,6 @@
   },
   "peerDependencies": {
     "eslint": ">=7.19.0",
-    "eslint-plugin-jsdoc": ">=37.9.4"
+    "eslint-plugin-jsdoc": ">=50.9.4"
   }
 }
