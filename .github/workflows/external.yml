@@ -81,5 +81,5 @@ jobs:
         run: sed 's/"@voxpelli"/"..\/main\/test.eslintrc"/' .eslintrc > tmp.eslintrc && rm .eslintrc && mv tmp.eslintrc .eslintrc
         working-directory: ./project
       - name: run eslint
-        run: ../main/node_modules/.bin/eslint -ext js .
+        run: npx eslint --ext js .
         working-directory: ./project
