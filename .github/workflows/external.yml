@@ -68,6 +68,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json', '**/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - name: install main
+        run: '[ -f package-lock.json ] && npm ci --ignore-scripts || npm install --ignore-scripts'
+        working-directory: ./main
       - name: install project
         run: '[ -f package-lock.json ] && npm ci --ignore-scripts || npm install --ignore-scripts'
         working-directory: ./project
