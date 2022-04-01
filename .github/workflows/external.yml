@@ -72,7 +72,7 @@ jobs:
         run: '[ -f package-lock.json ] && npm ci --ignore-scripts || npm install --ignore-scripts'
         working-directory: ./project
       - name: install main to project
-        run: npm link ../main
+        run: npm link --ignore-scripts ../main
         working-directory: ./project
       - name: modify project eslint
         run: sed 's/"@voxpelli"/"..\/main\/test.eslintrc"/' .eslintrc > tmp.eslintrc && rm .eslintrc && mv tmp.eslintrc .eslintrc
