@@ -19,9 +19,8 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "@voxpelli/eslint-config-jsdoc-ts": "^0.3.1",
     "eslint": "^7.32.0",
-    "eslint-plugin-jsdoc": ">=37.9.4",
+    "eslint-plugin-jsdoc": "^38.1.4",
     "ghat": "^0.14.0",
     "husky": "^7.0.4",
     "installed-check": "^5.0.0",
@@ -29,6 +28,6 @@
   },
   "peerDependencies": {
     "eslint": ">=7.19.0",
-    "eslint-plugin-jsdoc": ">=50.9.4"
+    "eslint-plugin-jsdoc": ">=38.1.4"
   }
 }
