@@ -1,5 +1,7 @@
 # @voxpelli/eslint-config-jsdoc-ts
 
+**DEPRECATED in favor of direct use of [my personal ESLint config](https://github.com/voxpelli/eslint-config)**
+
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat)](https://github.com/standard/semistandard)
 
 TypeScript-validated JSDoc related rule subset of [my personal ESLint config](https://github.com/voxpelli/eslint-config) that.
